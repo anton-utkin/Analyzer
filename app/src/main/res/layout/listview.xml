@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:hint="URL">
+        </EditText>
+
+        <EditText
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:hint="Filter">
+        </EditText>
+
+        <Button
+            android:background="@drawable/custom_button_selector"
+            android:layout_marginTop="15dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Download"
+            android:id="@+id/download_btn"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/status"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/list"
+          android:choiceMode="multipleChoice">
+
+    </ListView>
+</LinearLayout>
